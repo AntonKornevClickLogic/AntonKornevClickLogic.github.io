@@ -318,7 +318,7 @@ body {
 
 @media (min-width: 768px) and (max-width: 1199px) {
     .container {
-        max-width: 705px;
+        max-width: 740px;
         padding: 0;
     }
 }
@@ -499,6 +499,10 @@ body {
     color: #C3C3C3;
 }
 
+a.header__bottom_menu-item:hover {
+    color: #777;
+}
+
 .header__bottom_menu-item-active {
     max-width: max-content;
     padding: 3px 6px 4px 6px;
@@ -516,8 +520,8 @@ body {
 
 .article3__wrapper {
     position: sticky;
-    top: 60px;
-    bottom: 300px;
+    margin-top:auto;
+    bottom: 48px;
 }
 
 .topline {
@@ -629,6 +633,9 @@ body {
 }
 
 .article__right {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
     max-width: 324px;
 }
 
@@ -1533,6 +1540,10 @@ body {
 
     .article1__icon {
         margin-bottom: 22px;
+    }
+
+    .article1__icon img {
+        width: 100%;
     }
 
     .article1__nav {
