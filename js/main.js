@@ -11,8 +11,9 @@ var readMoreBtn = document.querySelector('.js-read-more');
 var contentMore = document.querySelector('.content-long');
 readMoreBtn.addEventListener('click', function (event) {
   event.preventDefault();
-  readMoreBtn.classList.toggle('show');
+  this.classList.toggle('show');
   contentMore.classList.toggle('show');
+  this.classList.contains('show') ? this.innerText = 'Show less' : this.innerText = 'Show more';
 });
 
 /***/ }),
