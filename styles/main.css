@@ -672,6 +672,7 @@ a {
   z-index: 1;
   position: relative;
   margin-bottom: 60px;
+  background-color: #000000;
 }
 
 .partners__button--toggle {
@@ -1025,6 +1026,7 @@ a {
 
 .bottom-content .content-short {
   margin-bottom: 15px;
+  padding: 0 10px;
 }
 
 .bottom-content .bottom-content-title {
@@ -1033,12 +1035,9 @@ a {
   font-weight: 700;
 }
 
-.bottom-content .content-short {
-  margin-bottom: 15px;
-}
-
 .bottom-content .content-long {
   display: none;
+  padding: 0 10px;
 }
 
 .bottom-content .content-long.show {
@@ -1422,7 +1421,7 @@ a {
   }
 
   .top-content__text {
-    padding: 0 4px;
+    padding: 0 10px;
   }
 
   .top-filters {
