@@ -507,6 +507,7 @@ a {
   background-image: url("../img/bg-home.png");
   background-repeat: no-repeat;
   background-size: 100%;
+  background-color: #000000;
 }
 
 .header {
@@ -672,7 +673,6 @@ a {
   z-index: 1;
   position: relative;
   margin-bottom: 60px;
-  background-color: #000000;
 }
 
 .partners__button--toggle {
@@ -908,6 +908,10 @@ a {
   color: #fff;
   cursor: pointer;
   transition: all 0.4s ease-out;
+}
+
+.partners .partners-description__link {
+  display: flex;
 }
 
 .partners .partners-description__link {
@@ -1185,6 +1189,15 @@ a {
 }
 
 @media (max-width: 991px) {
+  .partners .partners-description__link {
+    flex-direction: column;
+  }
+
+  .partners .partners-description__additional {
+    display: flex;
+    flex-direction: column;
+  }
+
   .container {
     width: 740px;
     padding: 0 60px;
@@ -1239,6 +1252,10 @@ a {
     width: 320px;
     background: linear-gradient(to left, #fff, #d8d8d8 50%, #fff 50%);
     position: relative;
+  }
+
+  .partners .partners-list__description {
+    flex-direction: column;
   }
 
   .partners .partners-item__name {
@@ -1358,6 +1375,11 @@ a {
     display: block;
   }
 
+  .partners div.partners-description__additional {
+    max-width: 320px;
+    padding: 0 48px;
+  }
+
   .partners .partners-slots {
     flex-wrap: wrap;
     gap: 30px;
@@ -1396,6 +1418,10 @@ a {
     background-size: 180%;
   }
 
+  .top-content__text {
+    padding: 0 10px;
+  }
+
   .top-content__descr {
     font-size: 14px;
   }
@@ -1420,10 +1446,6 @@ a {
     background-size: 100%;
   }
 
-  .top-content__text {
-    padding: 0 10px;
-  }
-
   .top-filters {
     display: none;
   }
@@ -1431,6 +1453,11 @@ a {
   .partners {
     background-color: #14181D;
     margin-bottom: 10px;
+  }
+
+  .partners div.partners-description__additional {
+    padding: 0;
+    max-width: 100%;
   }
 
   .partners__button--toggle {
@@ -1606,10 +1633,6 @@ a {
   .partners .partners-description__additional span {
     text-decoration: none;
     color: #888;
-  }
-
-  .partners .partners-description__additional span.show-less {
-    display: none;
   }
 
   .partners .partners-slots {
