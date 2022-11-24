@@ -61,6 +61,8 @@ function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) return _arrayLikeToAr
 function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
 var btnLess = _toConsumableArray(document.querySelectorAll('.js-show-more'));
 var btnMore = _toConsumableArray(document.querySelectorAll('.js-show-less'));
+var dotes = _toConsumableArray(document.querySelectorAll('.show-less'));
+
 var changeContent = function changeContent(content) {
   content.classList.toggle('hide');
 };
@@ -69,6 +71,7 @@ btnLess.map(function (item) {
     event.preventDefault();
     changeContent(item);
     changeContent(btnMore[btnLess.indexOf(item)]);
+    changeContent(dotes[btnLess.indexOf(item)])
   });
 });
 btnMore.map(function (item) {
@@ -76,6 +79,7 @@ btnMore.map(function (item) {
     event.preventDefault();
     changeContent(item);
     changeContent(btnLess[btnMore.indexOf(item)]);
+    changeContent(dotes[btnMore.indexOf(item)]);
   });
 });
 
